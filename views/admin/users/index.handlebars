@@ -1,0 +1,34 @@
+ <div class="col-lg-10 form-group content-param">
+ <table class="table table-hover table-borderless">
+                    <thead>
+                      <tr class="btn-dark">
+                        <th>First name :</th>
+                        <th>Last name :</th>
+                        <th>email :</th>
+                        <th>password :</th>
+                        <th>action :</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {{#each users}}
+                      <tr class="btn-light">
+                        <td > {{FirstName}}</td>
+                        <td >{{LastName}}</td>
+                        <td >{{Email}}</td>
+                        <td > {{Password}} </td>
+                        <td >
+                           {{!-- <form action="#" method="post"> --}}
+                             <button  class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                            {{!-- </form> --}}
+                             </td>         
+            </tr>
+            
+            {{/each}}
+            
+    
+                    </tbody>
+                  </table>
+
+                </div>
+
+                

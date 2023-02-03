@@ -1,0 +1,64 @@
+ 
+<div class="row" >
+  <div class="col-lg-1"></div>
+<div class="col-lg-10">
+  <div id="coursesDiv-header">
+  {{#each modulee}}
+<h3 id="courses-header">{{title}}</h3>
+<h4 id="courses-header-note">Courses,TD's,TP's</h4>
+<i class="fas fa-arrow-circle-down"></i>
+{{/each}}
+</div>
+ <table class="table table-hover table-borderless"style="margin-top: 100px;">
+                    <thead>
+                      <tr>
+                        <th id="table-title">Courses :</th>
+                        <th id="table-title">TD's:</th>
+                        <th id="table-title">TP's:</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                    <td> 
+                    <ul id="courses" class="list-group ">
+                        
+                        {{#each cours}}
+                      <li id="table-items"class=" btn btn-dark" >
+                          {{name}}
+                          <a id="table-href" href="{{linkk}}" class="btn btn-outline-danger"><i class="fas fa-file-pdf"></i></a>  
+                      </li>
+                    {{/each}}
+                   
+                     </ul>
+                    </td> 
+                    <td>
+                      <ul id="td" class="list-group ">
+                      
+                        {{#each td}}
+                      <li  id="table-items"class=" btn btn-dark" >
+                          {{name}}
+                          <a href="{{linkk}}" class="btn btn-outline-danger "id="table-href"><i class="fas fa-file-pdf"></i></a>  
+                      </li>
+                    {{/each}}
+                     </ul>
+                    </td>
+                    <td>
+                      <ul id="tp" class="list-group">
+                       {{#each tp}}
+                     <li  id="table-items"class=" btn btn-dark" >
+                          {{name}}
+                          <a href="{{linkk}}" class="btn btn-outline-danger " id="table-href"><i class="fas fa-file-pdf"></i></a>  
+                      </li>
+                    {{/each}}
+                     </ul>
+                    </td>
+                    
+                             
+            </tr>
+                </tbody>
+                   </table>
+</div>
+
+</div>
+<div class="col-lg-1"></div>
+</div>

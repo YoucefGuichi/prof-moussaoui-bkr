@@ -1,0 +1,23 @@
+<div class="col-lg-10 form-group content-param">
+<div class="row">
+ <div id="adn-insertData-form"class="form-group col-lg-12">
+     
+     <form action="" enctype="multipart/form-data" method="post">
+    <h3 id="adn-insert-data-title"> Upload Cours </h3>
+
+    <input id="adn-insertData-inputs" name="title" type="text" class="col-sm-12 btn btn-dark" placeholder="Cours Name .." >
+    
+    <input id="adn-insertData-inputs"name="linkk" type="text" class="col-sm-12 btn btn-dark" placeholder="Cours Link .." >
+    
+   <select id="adn-insertData-inputs"name="modulee"  class="custom-select col-sm-12 btn btn-dark" id="inputGroupSelect01">
+    <option selected> Wich module</option>
+    {{#each modulee}}
+    <option value="{{_id}}">{{title}}</option>
+    {{/each}}
+  </select>
+ 
+  <button id="adn-insertData-inputs"type="submit" class="btn btn-dark col-sm-12">Upload</button>
+   </form>
+</div>
+</div>
+</div>

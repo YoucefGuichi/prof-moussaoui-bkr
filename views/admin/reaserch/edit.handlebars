@@ -1,0 +1,9 @@
+ <form class="form-inline"action="" method="post">
+     {{#each article}}
+   <input id="adn-module-inputs" name="title"  type="text"class="btn btn-dark col-lg-12" value="{{title}}"><br>
+   <input id="adn-module-inputs" name="detail"  type="text"class="btn btn-dark col-lg-12" value="{{detail}}">
+  <input id="adn-module-inputs" name="date"  type="text"class="btn btn-dark col-lg-12" value="{{date}}">
+   <input id="adn-module-inputs" maxlength="49" name="article"  type="text"class="btn btn-dark col-lg-12" value="{{article}}">
+  <input id="adn-module-inputs"type="submit"  class="btn btn-dark col-lg-12" value="Edit">
+{{/each}}
+</form>

@@ -1,0 +1,83 @@
+<div class="col-lg-10 form-group content-param">
+  <div class="row">
+    <div class="col-lg-12">
+      <h3 id="adn-courses-title">Courses ,Tds , Tps :</h3>
+
+      <select id="InputFilter" class="col-lg-12 btn btn-dark" name="">
+
+
+        <option id="adn-courses-option" selected> Choose Module</option>
+        {{#each modulee}}
+        <option id="adn-courses-option" value="{{_id}}">{{title}}</option>
+        {{/each}}
+      </select>
+
+
+
+      <!-- course -->
+      <table class="table table-hover table-borderless">
+        <thead>
+          <tr class=" btn-dark">
+            <th id="adn-courses-table-title">Courses :</th>
+            <th id="adn-courses-table-title">TD's:</th>
+            <th id="adn-courses-table-title">TP's:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul id="courses" class="list-group btn btn-dark ">
+
+                {{#each cours}}
+                <li id="adn-courses-items" class="btn btn-dark">
+                  {{name}}<p id="adn-courses-parag">{{modulee}}</p>
+                  <form class="form-inline" action="courses/DeleteCourse/{{_id}}?newMethod=DELETE" method="post">
+                    <button href="" class="btn btn-outline-danger col-lg-12">Delete <i
+                        class="fas fa-trash"></i></button>
+                  </form>
+                </li>
+                {{/each}}
+
+              </ul>
+            </td>
+            <td>
+              <ul id="td" class="list-group ">
+
+                {{#each td}}
+                <li id="adn-courses-items" class=" btn btn-dark">
+                  {{name}} <p id="adn-courses-parag">{{modulee}}</p>
+                  <form class="form-inline" action="courses/Deletetd/{{_id}}?newMethod=DELETE" method="post">
+                    <button href="" class="btn btn-outline-danger col-lg-12">Delete <i
+                        class="fas fa-trash"></i></button>
+                  </form>
+                </li>
+                {{/each}}
+              </ul>
+            </td>
+            <td>
+              <ul id="tp" class="list-group">
+                {{#each tp}}
+                <li id="adn-courses-items" class="btn btn-dark">
+                  {{name}} <p id="adn-courses-parag">{{modulee}}</p>
+                  <form class="form-inline" action="courses/Deletetp/{{_id}}?newMethod=DELETE" method="post">
+                    <button href="" class="btn btn-outline-danger col-lg-12">Delete <i
+                        class="fas fa-trash"></i></button>
+                  </form>
+                </li>
+                {{/each}}
+              </ul>
+            </td>
+
+
+          </tr>
+        </tbody>
+
+
+
+
+      </table>
+      
+
+    </div>
+  </div>
+</div>

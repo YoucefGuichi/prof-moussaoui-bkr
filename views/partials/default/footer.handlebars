@@ -1,0 +1,72 @@
+<div class="row">
+  
+  <div id="footer"class="col-lg-12 btn btn-dark">
+    <p> &copy; 2020/2021</p>
+  </div>
+</div>
+ </div>
+<script>
+    // filter  module 
+  let inputFilterForModule= document.getElementById('InputFilter') ;
+inputFilterForModule.addEventListener('change',filterModule) ;
+
+function filterModule(){
+ let filtervalue = document.getElementById('InputFilter').value ;
+ let block = document.querySelectorAll('div#courses-list');
+ let level = document.querySelectorAll('#filterVal');
+   
+   console.log(level);
+   
+   for(let m=0;m<block.length;m++){
+     if(level[m].innerHTML == filtervalue){
+       block[m].style.display ='';
+     }else{
+        block[m].style.display ='none';
+     }
+   }
+}
+</script>
+<script>
+  $(document).ready(function(){
+    
+  
+
+// validation
+let blockk = document.getElementById('contact-form');
+let inputs =  blockk.querySelectorAll('#contact-input') ;
+ console.log(inputs);
+setInterval(function(){
+  
+for(let i=0 ; i<inputs.length ; i++){
+  if(inputs[i].value.length == 0){
+    $('#btn-send').attr("disabled", true) ;
+     $('#contact-warning').css({color:'red'});
+  }else{
+    if(inputs[i].value.length != 0 ){
+      if(i==3){
+        if(inputs[i-1].value.length!=0 && inputs[i-2].value.length!=0 && 
+        inputs[i-3].value.length!=0 ){
+                $('#btn-send').attr("disabled", false) ;
+                $('#contact-warning').css({color:'transparent'});
+        }
+      }
+    
+  } 
+  }
+  
+  str="!#$%^&*()+=-[]\\\';,./{}|\":<>?";
+  for(let j = 0 ; j<=str.length ;j++){
+    if((inputs[i].value.indexOf(str[j]))!=-1){
+      inputs[i].value='' ;
+      alert("special characters like :{,#,$,& are Forbidden !");
+    }
+  }
+}
+},1) ;
+});
+</script>
+
+    </body>
+</html>
+
+

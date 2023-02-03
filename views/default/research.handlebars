@@ -1,0 +1,33 @@
+<div style="margin-top:30px"class="row">
+
+    <div id="coursesDiv-header" style="margin: auto;" class="col-lg-10">
+        <h3 id="courses-header">My Articles:</h3>
+<table class="table table-hover table-borderless" style="margin-top: 10px;">
+                    <thead>
+                      <tr class=" btn-dark">
+                        <th>Title</th>
+                        <th>Year</th>
+                         <th>Download a Copy</th>
+
+                      </tr>
+                    </thead>
+                    <br>
+                    {{#each article}}
+                    <tr style="color: white;">
+                        <td>
+                            <div class="row">
+                                <div class="col-lg-10">
+                                <h5>{{title}}</h5>
+                                 <p style="color: rgba(255, 255, 255, 0.692);">{{detail}}</p>
+                        </div>
+                        </div>
+                        </td>
+                        
+                        <td >{{date}}</td>
+                        <td ><a class="btn btn-outline-danger" href="{{article}}"><i class="fas fa-file-pdf"></i></a></td>
+                        
+                    </tr>
+                    {{/each}}
+</table>
+</div>
+</div>

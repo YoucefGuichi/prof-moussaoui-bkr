@@ -1,0 +1,35 @@
+<div class="col-lg-10 form-group content-param">
+  <div class="row">
+    <div class="col-lg-12">
+   <h3 id="adn-emails-header">Messages :</h3>
+  
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th id="adn-email-table-title">First name :</th>
+                        <th id="adn-email-table-title">Last name :</th>
+                        <th id="adn-email-table-title">email :</th>
+                        <th id="adn-email-table-title">message :</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        {{#each emails}}
+                 <tr>       
+                        <td id="adn-email-table-title"> {{firstname}}</td>
+                        <td id="adn-email-table-title">{{lastname}}</td>
+                        <td id="adn-email-table-title">{{email}}</td>
+                        <td id="adn-email-table-title"> <textarea name="" id="" cols="30" rows="2" class="form-control">{{body}}</textarea> </td>
+                        <td id="adn-email-table-title">
+                           <form action="/admin/emails/delete/{{_id}}?newMethod=DELETE" method="post">
+                             <button  class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                            </form>
+                             </td>         
+            </tr>
+            {{/each}}
+            
+    
+                    </tbody>
+                  </table>
+</div>
+</div>
+</div>

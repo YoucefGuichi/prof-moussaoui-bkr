@@ -1,0 +1,42 @@
+<div class="col-lg-10 form-group content-param">
+  <div class="row">
+    <div class="col-lg-12 form-group">
+
+       <form class="form-inline"action="" method="post">
+   <input id="adn-module-inputs" name="title"  type="text"class="btn btn-dark col-lg-12" placeholder="title.."><br>
+   <textarea id="adn-module-inputs" cols="5" name="detail"  type="text"class="btn btn-dark col-lg-12" placeholder="Detail.."></textarea>
+  <input id="adn-module-inputs" name="date"  type="text"class="btn btn-dark col-lg-12" placeholder="Date..">
+   <input id="adn-module-inputs" maxlength="49" name="article"  type="text"class="btn btn-dark col-lg-12" placeholder="Article Link...">
+  <input id="adn-module-inputs"type="submit"  class="btn btn-dark col-lg-12" value="Insert">
+
+</form>
+<table class="table table-hover table-borderless" style="margin-top: 10px;">
+                    <thead>
+                      <tr class=" btn-dark">
+                        <th>Title :</th>
+                        <th>Detail :</th>
+                        <th>Date :</th>
+                         <th>article :</th>
+                         <th>action :</th>
+                      </tr>
+                    </thead>
+                    <br>
+                    {{#each article}}
+                    <tr class=" btn-light">
+                        <td>{{title}}</td>
+                        <td >{{detail}}</td>
+                        <td >{{date}}</td>
+                      <td ><a class="btn btn-info" href="{{article}}"><i class="fas fa-file-pdf"></i></a></td>
+                        <td class="d-flex justify-content-center" >
+                            <a class="btn btn-warning" href="research/edit/{{_id}}"><i class="fas fa-pen"></i></a>
+                            <form action="/admin/research/delete/{{_id}}?newMethod=DELETE" method="post">
+                            <button class="btn btn-danger" type="submit"><i class="fas fa-trash"></i></button>
+                           </form>
+                        </td>
+                    </tr>
+                    {{/each}}
+</table>
+
+        </div>
+        </div>
+        </div>

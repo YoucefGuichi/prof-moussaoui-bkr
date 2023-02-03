@@ -1,0 +1,241 @@
+@media screen and (min-width: 400px) and (max-width: 900px)
+{
+    #nv-item{
+        
+        
+    }
+    #navi{
+        height: fit-content;
+        
+    }
+    #InputFilter{
+        width: 17rem;
+    }
+
+    
+    
+        
+    
+    
+       
+   
+}
+@media screen and (min-width: 992px){
+    #navi{
+        position: fixed;
+        height: 700px;
+
+    }
+    #courses-list{
+        width: 17rem;
+    }
+    
+    
+}
+.container-fluid .nav-param{
+    
+    background-color: #363636;
+    
+    
+
+}
+.container-fluid .content-param{
+    height: 700px ;
+   
+
+    
+}
+
+
+.container-fluid .content-param{
+    background-color: rgb(90, 88, 88);
+    border-color: black;
+    box-shadow: cornsilk;
+    
+}
+.container-fluid .content-param .form-group{
+margin:auto;
+height: 455px;
+border-color: black;
+border-radius: 10px 10px 10px 10px ;
+
+}
+
+                                              /*----default------*/
+#content{
+    margin-bottom: 30px;
+}                                            
+/* index */
+#default-index{
+
+
+}
+#index-title{
+    margin-top:10px ;
+    margin-bottom: 10px;
+}
+#index-image{
+width:300px ;
+height: 300px;
+}
+#index-parag{
+    color:#9FEAF9;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+/*  nav items */
+#nv-item{
+    border-radius: 5px 5px 5px 5px ;
+    text-align:left;
+    color:rgb(240, 239, 239);
+    margin-top: 7px;
+}
+
+#nv-item-data{
+    color:#9FEAF9 ;
+     
+}
+/* Contact Me */
+#contact-form{
+    margin: auto;
+     margin-top: 70px;
+     text-align: center;
+}
+#contact-header{
+    color: white;
+    font-size:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    
+}
+#contact-input{
+    margin-top:3px
+}
+#btn-send{
+    margin-bottom: 30px;
+}
+/* Courses */
+#coursesDiv-header{
+    margin-top: 100px;
+    text-align: center;
+    
+}
+#courses-header{
+    color: white;
+    font-size:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#courses-header-note{
+    color: white;
+    font-size: 15px;
+}
+#InputFilter{
+    
+    margin-bottom:5px;
+    margin-top:3px;
+}
+#courses-option{
+    margin-left:7px;
+}
+#courses-list{
+    
+    margin-right:2px;
+    margin-bottom:5px; 
+    
+    color:rgb(240, 239, 239)
+}
+#courses-text{
+    color:rgba(255, 255, 255, 0.712);
+}
+/*Login*/
+#login-form{
+    width:500px;
+    margin-top: 100px;
+}
+#login-header{
+    color: #9FEAF9;
+    font-size:larger;
+    font-weight:bold
+}
+#login-input{
+    margin-top:3px
+}
+/* View Courses*/
+#table-title{
+    color:rgb(240, 239, 239);
+}
+#table-items{
+    margin-top:5px;
+}
+#table-href{
+    margin-left:3px;
+    height: 40px;
+}
+                                               /*----admin------*/
+/* Courses */ 
+#adn-courses-title{
+    color: white;
+    font-size:25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}  
+#adn-courses-option{
+    margin-bottom: 3px;
+    margin-left:7px; 
+    background-color:#2B2E3B;
+    color:#9FEAF9
+}  
+#adn-courses-table-title{
+    /**/
+}     
+#adn-courses-items{
+    text-align:center;
+    margin-bottom: 2px;
+} 
+#adn-courses-parag{
+    visibility: hidden;
+     width:0px;
+     height:0px
+}   
+/* emails */
+#adn-emails-header{
+    color: #9FEAF9;
+}
+#adn-email-table-title{
+    color: #9FEAF9;
+} 
+/* insert data */
+#adn-insertData-form{
+    width:500px;
+    margin-top: 100px;
+}
+#adn-insert-data-title{
+    color: #9FEAF9;  
+}    
+#adn-insertData-inputs{
+    margin-top: 3px;
+}   
+/*modules*/
+#adn-module-edit{
+    margin-top: 100px;
+}
+#adn-module-inputs{
+    margin-top: 3px;
+}
+/* profil */
+#adn-profil-header{
+    margin:auto;
+    color: #9FEAF9;
+}
+#adn-profil-inputs{
+    margin-top: 5px;
+    text-align: left;
+}
+#footer{
+    text-align: center;
+    
+    margin-top: 3px;
+    padding-top: 10px;
+}
